@@ -8,10 +8,14 @@ export const RecordsTable = ({ records, onRecordDelete, onRecordUpdate }) => {
   const [descriptionFilter, setDescriptionFilter] = useState("");
   const [filteredRecords, setFilteredRecords] = useState(records);
   const navigateTo = useNavigate();
-
+  
   const closeUpdateModal = () => {
     setUpdatingRecord(null);
   };
+  
+  useEffect(() => {
+    setFilteredRecords(records);
+  }, [records]);
 
   useEffect(() => {
     filterRecords();

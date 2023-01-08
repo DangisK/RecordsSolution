@@ -10,7 +10,7 @@ builder.Services.AddCors(o =>
 {
     o.AddPolicy("myCors", builder =>
     {
-        builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000", "https://appname.azurestaticapps.net");
+        builder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000", "https://red-bush-0ebb0ee03.2.azurestaticapps.net");
     });
 });
 

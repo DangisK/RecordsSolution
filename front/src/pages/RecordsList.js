@@ -53,7 +53,7 @@ export const RecordsList = () => {
 
   const onRecordUpdate = (updatedRecord) => {
     const newRecords = records.map((record) =>
-      record.recordId === updatedRecord.recordId ? updatedRecord : record
+    record.recordId === updatedRecord.recordId ? updatedRecord : record
     );
     setRecords(newRecords);
   };
